@@ -37,7 +37,7 @@ public class PlayerControllerX : MonoBehaviour
         }
         else
         {
-             paticls.Stop();
+            paticls.Pause();
             speed=500;
         }
         playerRb.AddForce(focalPoint.transform.forward * verticalInput * speed * Time.deltaTime); 
